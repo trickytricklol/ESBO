@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Data & datasets (download separately, see README)
+data/
+*.npy
+*.h5
+*.npz
+*.ply
+*.off
+
+# Checkpoints / logs / experiment artifacts
+checkpoints/
+log/
+logs/
+ckpt/
+finetune_ckpt/
+experiments/
+TFBoard/
+*.pth
+*.t7
+*.safetensors
+*.pt
+run.log
+*.log
+
+# Analysis / intermediate outputs
+output/
+pointwolf_analysis_results/
+enhanced_sample_distribution/
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__MACOSX/

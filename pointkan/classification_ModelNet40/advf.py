@@ -206,6 +206,24 @@ def build_similar_label_mapping(sim_matrix, topk=10):
         mapping[i] = topk_indices
     return mapping
 
+# def pgd_attack_similar_labels(model, inputs, true_labels, target_labels, loss_fn,
+#                                epsilon=0.01, alpha=0.005, steps=7):
+#     ori_inputs = inputs.clone().detach()
+#     perturbed = ori_inputs.clone().detach().requires_grad_(True)
+
+#     for _ in range(steps):
+#         outputs = model(perturbed)
+#         loss = loss_fn(outputs, target_labels)
+#         model.zero_grad()
+#         loss.backward()
+#         with torch.no_grad():
+#             perturbed = perturbed - alpha * perturbed.grad.sign() 
+#             perturbation = torch.clamp(perturbed - ori_inputs, min=-epsilon, max=epsilon)
+#             perturbed = torch.clamp(ori_inputs + perturbation, min=-1, max=1).detach()
+#         perturbed.requires_grad = True
+
+#     return perturbed.detach()
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -213,7 +231,22 @@ import torch.nn.functional as F
 def pgd_attack_similar_labels(model, inputs, true_labels, target_labels, loss_fn,
                              epsilon=0.005, alpha=0.005, steps=1):
     """
-    Per-sample PGD adversarial attack
+    优化的逐样本PGD对抗攻击
+    改进点：
+    1. 使用torch.autograd.grad替代backward()避免干扰模型梯度
+    2. 减少不必要的张量克隆
+    3. 更安全的梯度计算环境管理
+    参数:
+        model: 目标模型 [nn.Module]
+        inputs: 输入张量 [B, C, N]
+        true_labels: 真实标签 [B]
+        target_labels: 目标攻击标签 [B] 
+        loss_fn: 损失函数
+        epsilon: 扰动范围 (建议: 0.01-0.1)
+        alpha: 单步扰动强度 (建议: epsilon/steps)
+        steps: 攻击步数 (建议: 3-10)
+    返回:
+        对抗样本 [B, C, N]
     """
     original_mode = model.training
     model.eval()  # 固定BN/Dropout等层
@@ -262,6 +295,20 @@ def train(net, trainloader, optimizer, criterion, device,flag):
         if flag == 1:
             data, label = data.to(device), label.to(device).squeeze()
             data = data.permute(0, 2, 1)  # so, the input data shape is [batch, 3, 1024]
+            # class_weights = extract_classifier_weights(net)
+            # sim_matrix = compute_cosine_similarity(class_weights)
+            # similar_label_map = build_similar_label_mapping(sim_matrix, topk=5)
+            
+            # target_labels_np = []
+            # target_label_weights = []  # 用于存储每个样本的权重
+            # for y_i in label:
+            #     similar_labels = [l for l in similar_label_map[y_i.item()] if l != y_i.item()]
+            #     target_label = np.random.choice(similar_labels)
+            #     target_labels_np.append(target_label)
+            #     target_label_index = similar_labels.index(target_label)
+            #     target_label_weights.append(0.5 ** target_label_index)  # 计算权重
+            # target_labels = torch.tensor(target_labels_np, dtype=torch.long).to(device)
+            # target_label_weights = torch.tensor(target_label_weights, dtype=torch.float32).to(device)
             # 获取模型当前预测结果
             with torch.no_grad():
                 outputs = net(data)  # 假设data需要permute

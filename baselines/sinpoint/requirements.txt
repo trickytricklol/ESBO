@@ -1,0 +1,12 @@
+torch
+torchvision
+cudatoolkit
+cycler
+einops
+h5py
+matplotlib==3.4.2
+pytorch
+pyyaml==5.4.1
+scikit-learn==0.24.2
+scipy
+tqdm

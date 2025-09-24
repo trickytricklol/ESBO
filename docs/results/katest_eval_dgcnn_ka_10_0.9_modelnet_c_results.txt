@@ -1,0 +1,129 @@
+ModelNet-C Evaluation Results
+==================================================
+Model: dgcnn
+Test Time: 2025-10-22 19:58:30
+
+Clean Data Accuracy: 0.9275
+
+Corruption: background
+------------------------------
+Severity 1: 0.7322
+Severity 2: 0.7103
+Severity 3: 0.6925
+Severity 4: 0.6811
+Severity 5: 0.6309
+
+Corruption: cutout
+------------------------------
+Severity 1: 0.9040
+Severity 2: 0.8951
+Severity 3: 0.8724
+Severity 4: 0.8468
+Severity 5: 0.7938
+
+Corruption: density
+------------------------------
+Severity 1: 0.8991
+Severity 2: 0.8902
+Severity 3: 0.8675
+Severity 4: 0.8440
+Severity 5: 0.7934
+
+Corruption: density_inc
+------------------------------
+Severity 1: 0.8995
+Severity 2: 0.8951
+Severity 3: 0.8870
+Severity 4: 0.8780
+Severity 5: 0.8643
+
+Corruption: distortion
+------------------------------
+Severity 1: 0.9133
+Severity 2: 0.9092
+Severity 3: 0.9084
+Severity 4: 0.9056
+Severity 5: 0.8849
+
+Corruption: distortion_rbf
+------------------------------
+Severity 1: 0.9153
+Severity 2: 0.9003
+Severity 3: 0.9024
+Severity 4: 0.8938
+Severity 5: 0.8679
+
+Corruption: distortion_rbf_inv
+------------------------------
+Severity 1: 0.9121
+Severity 2: 0.9117
+Severity 3: 0.9036
+Severity 4: 0.8934
+Severity 5: 0.8902
+
+Corruption: gaussian
+------------------------------
+Severity 1: 0.9036
+Severity 2: 0.8870
+Severity 3: 0.8630
+Severity 4: 0.8140
+Severity 5: 0.7362
+
+Corruption: impulse
+------------------------------
+Severity 1: 0.8375
+Severity 2: 0.8286
+Severity 3: 0.8023
+Severity 4: 0.7650
+Severity 5: 0.6722
+
+Corruption: lidar
+------------------------------
+Severity 1: 0.2220
+Severity 2: 0.2613
+Severity 3: 0.2654
+Severity 4: 0.2010
+Severity 5: 0.1730
+
+Corruption: occlusion
+------------------------------
+Severity 1: 0.4068
+Severity 2: 0.4453
+Severity 3: 0.4724
+Severity 4: 0.4145
+Severity 5: 0.3432
+
+Corruption: rotation
+------------------------------
+Severity 1: 0.9157
+Severity 2: 0.9121
+Severity 3: 0.9125
+Severity 4: 0.9015
+Severity 5: 0.8610
+
+Corruption: shear
+------------------------------
+Severity 1: 0.9125
+Severity 2: 0.9096
+Severity 3: 0.9048
+Severity 4: 0.9076
+Severity 5: 0.8999
+
+Corruption: uniform
+------------------------------
+Severity 1: 0.9044
+Severity 2: 0.8898
+Severity 3: 0.8740
+Severity 4: 0.8363
+Severity 5: 0.7828
+
+Corruption: upsampling
+------------------------------
+Severity 1: 0.8809
+Severity 2: 0.8655
+Severity 3: 0.8541
+Severity 4: 0.8347
+Severity 5: 0.7824
+
+MOA (Mean Accuracy): 0.7846
+MCE (Mean Corruption Error): 0.1540

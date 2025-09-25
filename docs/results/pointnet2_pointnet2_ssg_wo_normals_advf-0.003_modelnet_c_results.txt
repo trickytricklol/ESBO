@@ -1,0 +1,128 @@
+ModelNet-C Evaluation Results
+==================================================
+数据目录: /mnt/c/Users/Administrator/readmodelnet/modelnet40_c
+评估时间: 2025-09-09 13:47:02
+MOA (平均准确率): 0.7561
+
+平均准确率: 0.7921
+
+
+Corruption: background
+------------------------------
+Severity 1: Accuracy=0.8019
+Severity 2: Accuracy=0.8035
+Severity 3: Accuracy=0.7759
+Severity 4: Accuracy=0.7739
+Severity 5: Accuracy=0.7265
+
+Corruption: cutout
+------------------------------
+Severity 1: Accuracy=0.9052
+Severity 2: Accuracy=0.9105
+Severity 3: Accuracy=0.9032
+Severity 4: Accuracy=0.8971
+Severity 5: Accuracy=0.8934
+
+Corruption: density
+------------------------------
+Severity 1: Accuracy=0.9072
+Severity 2: Accuracy=0.9064
+Severity 3: Accuracy=0.9036
+Severity 4: Accuracy=0.9003
+Severity 5: Accuracy=0.8947
+
+Corruption: density_inc
+------------------------------
+Severity 1: Accuracy=0.9032
+Severity 2: Accuracy=0.9072
+Severity 3: Accuracy=0.9032
+Severity 4: Accuracy=0.9044
+Severity 5: Accuracy=0.9084
+
+Corruption: distortion
+------------------------------
+Severity 1: Accuracy=0.8979
+Severity 2: Accuracy=0.8772
+Severity 3: Accuracy=0.8347
+Severity 4: Accuracy=0.7865
+Severity 5: Accuracy=0.7301
+
+Corruption: distortion_rbf
+------------------------------
+Severity 1: Accuracy=0.8955
+Severity 2: Accuracy=0.8797
+Severity 3: Accuracy=0.8387
+Severity 4: Accuracy=0.7982
+Severity 5: Accuracy=0.7484
+
+Corruption: distortion_rbf_inv
+------------------------------
+Severity 1: Accuracy=0.8991
+Severity 2: Accuracy=0.8801
+Severity 3: Accuracy=0.8424
+Severity 4: Accuracy=0.8039
+Severity 5: Accuracy=0.7561
+
+Corruption: gaussian
+------------------------------
+Severity 1: Accuracy=0.8890
+Severity 2: Accuracy=0.8716
+Severity 3: Accuracy=0.8476
+Severity 4: Accuracy=0.8002
+Severity 5: Accuracy=0.7391
+
+Corruption: impulse
+------------------------------
+Severity 1: Accuracy=0.8772
+Severity 2: Accuracy=0.8768
+Severity 3: Accuracy=0.8578
+Severity 4: Accuracy=0.8375
+Severity 5: Accuracy=0.7848
+
+Corruption: lidar
+------------------------------
+Severity 1: Accuracy=0.4911
+Severity 2: Accuracy=0.5839
+Severity 3: Accuracy=0.5928
+Severity 4: Accuracy=0.4899
+Severity 5: Accuracy=0.4287
+
+Corruption: occlusion
+------------------------------
+Severity 1: Accuracy=0.5174
+Severity 2: Accuracy=0.5725
+Severity 3: Accuracy=0.5887
+Severity 4: Accuracy=0.5166
+Severity 5: Accuracy=0.4635
+
+Corruption: rotation
+------------------------------
+Severity 1: Accuracy=0.8926
+Severity 2: Accuracy=0.8594
+Severity 3: Accuracy=0.7694
+Severity 4: Accuracy=0.6831
+Severity 5: Accuracy=0.4793
+
+Corruption: shear
+------------------------------
+Severity 1: Accuracy=0.8987
+Severity 2: Accuracy=0.8788
+Severity 3: Accuracy=0.8460
+Severity 4: Accuracy=0.8019
+Severity 5: Accuracy=0.7585
+
+Corruption: uniform
+------------------------------
+Severity 1: Accuracy=0.8772
+Severity 2: Accuracy=0.8310
+Severity 3: Accuracy=0.7873
+Severity 4: Accuracy=0.7330
+Severity 5: Accuracy=0.6528
+
+Corruption: upsampling
+------------------------------
+Severity 1: Accuracy=0.8691
+Severity 2: Accuracy=0.8566
+Severity 3: Accuracy=0.8391
+Severity 4: Accuracy=0.8144
+Severity 5: Accuracy=0.7561

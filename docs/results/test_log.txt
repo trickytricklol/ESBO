@@ -1,0 +1,116 @@
+==> Building model..
+==> Building model..
+==> Building model..
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/checkpoints/pointKAN-20250603110846-83/best_checkpoint.pth
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/checkpoints/pointKAN-20250603110846-83/best_checkpoint.pth
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.487
+Test Accuracy: 92.626%
+Balanced Accuracy: 89.366%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/checkpoints/pointKAN-20250603110846-83/best_checkpoint.pth
+==> Preparing data..
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/checkpoints/pointKAN-20250603110846-83/best_checkpoint.pth
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.487
+Test Accuracy: 92.626%
+Balanced Accuracy: 89.366%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/finetune_ckpt/pointKAN-finetune-20250701150633-Modelnet40/best_checkpoint.pth
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.538
+Test Accuracy: 92.788%
+Balanced Accuracy: 89.933%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/finetune_ckpt/pointKAN-finetune-20250701150633-Modelnet40/best_checkpoint.pth
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.538
+Test Accuracy: 92.788%
+Balanced Accuracy: 89.933%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/checkpoints/pointKAN-20250603110846-83/best_checkpoint.pth
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/finetune_ckpt/pointKAN-finetune-20250701150633-Modelnet40/best_checkpoint.pth
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/finetune_ckpt/pointKAN-finetune-20250701150633-Modelnet40/best_checkpoint.pth
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.538
+Test Accuracy: 92.788%
+Balanced Accuracy: 89.933%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/checkpoints/pointKAN-20250603110846-83/best_checkpoint.pth
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.487
+Test Accuracy: 92.626%
+Balanced Accuracy: 89.366%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/finetune_ckpt/pointKAN-finetune-20250701150633-Modelnet40/best_checkpoint.pth
+D_inter (avg inter-class distance): 1.050853
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.538
+Test Accuracy: 92.788%
+Balanced Accuracy: 89.933%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/finetune_ckpt/pointKAN-finetune-20250701150633-Modelnet40/best_checkpoint.pth
+D_inter (avg inter-class distance): 1.025212
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.538
+Test Accuracy: 92.788%
+Balanced Accuracy: 89.933%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/checkpoints/pointKAN-20250603110846-83/best_checkpoint.pth
+D_inter (avg inter-class distance): 1.025221
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.487
+Test Accuracy: 92.626%
+Balanced Accuracy: 89.366%
+Results saved to test_results
+==> Building model..
+==> Loading pretrained model from /mnt/c/Users/Administrator/PointKAN-pytorch/finetune_ckpt/pointKAN-finetune-20250701150633-Modelnet40/best_checkpoint.pth
+D_inter (avg inter-class distance): 1.025212
+==> Preparing data..
+==> Testing..
+
+=== Final Test Results ===
+Test Loss: 1.538
+Test Accuracy: 92.788%
+Balanced Accuracy: 89.933%
+Results saved to test_results

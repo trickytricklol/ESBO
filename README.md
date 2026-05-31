@@ -4,7 +4,8 @@
 
 Shurong Dong, Jie Lin, Ruida Mao, Xuepei Yang, Shuping Zhang, Guanghui Zhao
 
-Expert Systems With Applications (ESWA), Manuscript **ESWA-D-26-03463_R1** (under review)
+Published in **Expert Systems With Applications (ESWA)**, Volume 326, Article 132578 (2026).
+DOI: [10.1016/j.eswa.2026.132578](https://doi.org/10.1016/j.eswa.2026.132578)
 
 ---
 
@@ -28,7 +29,7 @@ complementary knowledge-driven mechanisms:
 ESBO is **model-agnostic** and integrates seamlessly with existing architectures
 (PointNet++, DGCNN, PointKAN, Point-MAE) and augmentation strategies (PointWOLF, AugTune).
 
-## Key Results (from the manuscript)
+## Key Results (from the paper)
 
 | Benchmark | Architecture | Gain |
 |---|---|---|
@@ -198,12 +199,14 @@ each submodule). The ESBO implementation and analysis scripts are released under
 If you find this work useful, please consider citing:
 
 ```bibtex
-@article{dong2025esbo,
+@article{dong2026esbo,
   title={Beyond Empirical Risk: Achieving Point Cloud Robustness through Margin Refinement and Data Purification},
   author={Dong, Shurong and Lin, Jie and Mao, Ruida and Yang, Xuepei and Zhang, Shuping and Zhao, Guanghui},
   journal={Expert Systems With Applications},
+  volume={326},
+  pages={132578},
   year={2026},
-  note={Manuscript ESWA-D-26-03463_R1}
+  doi={10.1016/j.eswa.2026.132578}
 }
 ```
 
